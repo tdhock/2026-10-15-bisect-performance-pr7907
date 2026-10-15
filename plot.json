@@ -1,0 +1,2432 @@
+{
+ "geoms": {
+ "geom1_rect_bisects": {
+ "geom": "rect",
+"classed": "geom1_rect_bisects",
+"aes": {
+"xmin": "rank_old",
+"xmax": "rank_new",
+"key": "1",
+"ymin": "-Inf",
+"ymax": "Inf",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"colour": "transparent",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"ymin": "numeric",
+"ymax": "numeric",
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom1_rect_bisects_chunk1.tsv": {
+ "bytes":      487,
+"rows": 10 
+} 
+} 
+},
+"geom2_tallrect_bisects": {
+ "geom": "tallrect",
+"classed": "geom2_tallrect_bisects",
+"aes": {
+"xmin": "rank - 0.5",
+"xmax": "rank + 0.5",
+"key": "rank",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom2_tallrect_bisects_chunk1.tsv": {
+ "bytes":     1350,
+"rows": 49 
+} 
+} 
+},
+"geom3_vline_bisects": {
+ "geom": "vline",
+"classed": "geom3_vline_bisects",
+"aes": {
+"xintercept": "rank"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00BFFF",
+"size":        1 
+},
+"types": {
+"xintercept": "numeric",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom3_vline_bisects_chunk1.tsv": {
+ "bytes":       65,
+"rows": 10 
+} 
+} 
+},
+"geom4_vline_bisects": {
+ "geom": "vline",
+"classed": "geom4_vline_bisects",
+"aes": {
+"xintercept": "rank_change",
+"key": "1",
+"showSelected1": "Bisect",
+"showSelected2": "Status"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"showSelected": [ "Bisect", "Status" ],
+"help_showSelected": [ "Bisect", "Status" ] 
+},
+"types": {
+"xintercept": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom4_vline_bisects_chunk1.tsv": {
+ "bytes":      333,
+"rows": 10 
+} 
+} 
+},
+"geom5_labelaligned_bisects": {
+ "geom": "label_aligned",
+"classed": "geom5_labelaligned_bisects",
+"aes": {
+"x": "rank",
+"y": "0",
+"label": "sprintf(\" %s \", Rname)"
+},
+"params": {
+ "label_r":     0.15,
+"alignment": "horizontal",
+"min_distance":      0.1,
+"background_rect": true,
+"na.rm": false,
+"na.rm": false,
+"colour": "#00BFFF" 
+},
+"types": {
+"y": "numeric",
+"x": "numeric",
+"label": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom5_labelaligned_bisects_chunk1.tsv": {
+ "bytes":       93,
+"rows": 5 
+} 
+} 
+},
+"geom6_segment_bisects": {
+ "geom": "segment",
+"classed": "geom6_segment_bisects",
+"aes": {
+"x": "ifelse(age == \"old\", rank_old, rank_min)",
+"y": "med_value",
+"xend": "ifelse(age == \"old\", rank_max, rank_new)",
+"yend": "med_value",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"showSelected": [ "age", "Bisect" ],
+"help_showSelected": [ "age", "Bisect" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom6_segment_bisects_chunk1.tsv": {
+ "bytes":      753,
+"rows": 10 
+} 
+} 
+},
+"geom7_segment_bisects": {
+ "geom": "segment",
+"classed": "geom7_segment_bisects",
+"aes": {
+"x": "rank_old",
+"y": "y",
+"xend": "rank_new",
+"yend": "y",
+"clickSelects": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": "Bisect",
+"alpha_off":      0.3,
+"help_clickSelects": "Bisect" 
+},
+"types": {
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom7_segment_bisects_chunk1.tsv": {
+ "bytes":      152,
+"rows": 5 
+} 
+} 
+},
+"geom8_text_bisects": {
+ "geom": "text",
+"classed": "geom8_text_bisects",
+"aes": {
+"x": "max(rank_new)",
+"y": "1",
+"key": "1",
+"label": "Bisect",
+"showSelected1": "Bisect"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "Bisect",
+"help_showSelected": "Bisect",
+"anchor": "end" 
+},
+"types": {
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom8_text_bisects_chunk1.tsv": {
+ "bytes":      203,
+"rows": 5 
+} 
+} 
+},
+"geom9_point_bisects": {
+ "geom": "point",
+"classed": "geom9_point_bisects",
+"aes": {
+"x": "rank",
+"y": "y",
+"colour": "age",
+"key": "paste(Bisect, age)",
+"clickSelects": "Bisect",
+"showSelected1": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": "Bisect",
+"alpha_off":      0.3,
+"showSelected": "age",
+"help_clickSelects": "Bisect",
+"help_showSelected": "age" 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "character",
+"clickSelects": "character",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character",
+"fill": "rgb"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom9_point_bisects_chunk1.tsv": {
+ "bytes":      608,
+"rows": 10 
+} 
+} 
+},
+"geom10_segment_bisects": {
+ "geom": "segment",
+"classed": "geom10_segment_bisects",
+"aes": {
+"x": "rank_min",
+"y": "y",
+"xend": "rank_max",
+"yend": "y",
+"clickSelects": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        7,
+"clickSelects": "Bisect",
+"alpha_off":      0.3,
+"help_clickSelects": "Bisect" 
+},
+"types": {
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom10_segment_bisects_chunk1.tsv": {
+ "bytes":      152,
+"rows": 5 
+} 
+} 
+},
+"geom11_point_bisects": {
+ "geom": "point",
+"classed": "geom11_point_bisects",
+"aes": {
+"x": "rank_change",
+"y": "y",
+"fill": "Status",
+"clickSelects": "Bisect",
+"showSelected1": "Status"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"clickSelects": "Bisect",
+"showSelected": "Status",
+"alpha_off":      0.3,
+"help_clickSelects": "Bisect",
+"help_showSelected": "Status" 
+},
+"types": {
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom11_point_bisects_chunk1.tsv": {
+ "bytes":      224,
+"rows": 5 
+} 
+} 
+},
+"geom12_line_bisects": {
+ "geom": "line",
+"classed": "geom12_line_bisects",
+"aes": {
+"x": "rank",
+"y": "value_median",
+"colour": "age",
+"key": "1",
+"showSelected1": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        2,
+"showSelected": "age",
+"help_showSelected": "age" 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom12_line_bisects_chunk1.tsv": {
+ "bytes":     1539,
+"rows": 38 
+} 
+} 
+},
+"geom13_point_bisects": {
+ "geom": "point",
+"classed": "geom13_point_bisects",
+"aes": {
+"x": "rank",
+"y": "value",
+"key": "paste(rank, age)",
+"fill": "Status",
+"colour": "age",
+"showSelected1": "Status",
+"showSelected2": "age",
+"showSelected3": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": [ "Status", "age", "Bisect" ],
+"help_showSelected": [ "Status", "age", "Bisect" ] 
+},
+"types": {
+"colour": "rgb",
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "character",
+"showSelected1": "factor",
+"showSelected2": "factor",
+"showSelected3": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom13_point_bisects_chunk1.tsv": {
+ "bytes":     9710,
+"rows": 147 
+} 
+} 
+},
+"geom14_tallrect_bisects": {
+ "geom": "tallrect",
+"classed": "geom14_tallrect_bisects",
+"aes": {
+"xmin": "rank - 0.5",
+"xmax": "rank + 0.5",
+"key": "rank",
+"clickSelects": "Commit",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"colour": "#000000",
+"fill": "transparent",
+"clickSelects": "Commit",
+"showSelected": "Bisect",
+"alpha_off":        0,
+"colour_off": "transparent",
+"help_clickSelects": "Commit",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom14_tallrect_bisects_chunk1.tsv": {
+ "bytes":     3984,
+"rows": 49 
+} 
+} 
+},
+"geom15_hline_details": {
+ "geom": "hline",
+"classed": "geom15_hline_details",
+"aes": {
+"yintercept": "seconds"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE" 
+},
+"types": {
+"yintercept": "numeric",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom15_hline_details_chunk1.tsv": {
+ "bytes":       14,
+"rows": 1 
+} 
+} 
+},
+"geom16_text_details": {
+ "geom": "text",
+"classed": "geom16_text_details",
+"aes": {
+"x": "0",
+"y": "seconds * 1.1",
+"label": "sprintf(\"time limit = %s seconds\", paste(seconds))"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"anchor": "start" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"label": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom16_text_details_chunk1.tsv": {
+ "bytes":       73,
+"rows": 1 
+} 
+} 
+},
+"geom17_ribbon_details": {
+ "geom": "ribbon",
+"classed": "geom17_ribbon_details",
+"aes": {
+"x": "N",
+"ymin": "min",
+"ymax": "max",
+"key": "age",
+"fill": "age",
+"group": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.2,
+"colour": "transparent",
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"fill": "rgb",
+"x": "numeric",
+"ymin": "numeric",
+"ymax": "numeric",
+"key": "factor",
+"group": "character",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"colour": "rgb"
+},
+"chunk_order": [
+ "Commit" 
+],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"columns": {
+ "common": [
+ "group",
+"colour",
+"fill",
+"key",
+"showSelected1" 
+] 
+},
+"chunks": {
+ "Fast-PR7383 22045e5ef8f46066619823d42ea83253f165ea7d": 1,
+"Fast-PR7383 263b53e50241914a22f7ba6a139b52162c9d7927": 2,
+"Fast-PR7383 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d": 3,
+"Fast-PR7383 4f84d3c72a08ecdd9965b3cb8e493cabfd80492b": 4,
+"Fast-PR7383 55b0de600d1770babe63d94ad3766a36bdedc443": 5,
+"Fast-PR7383 59f966cf6839a0494e42ed1ab98616eea03dcb36": 6,
+"Fast-PR7383 66cb6d2393cef30083b444346a7600a079207806": 7,
+"Fast-PR7383 67129f034941b1d8ea3ed684822e04f517c6c837": 8,
+"Fast-PR7383 833c1f4bcc6eb664320f80bf1abde4cc8177b20c": 9,
+"Fast-PR7383 c81f8bbdffebd4886ddf70b9ca0f61a1cfa8237b": 10,
+"Fast-PR7383 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd": 11,
+"Fast-PR7383 fb419f1a672ee5dbf4069c24a82c6168abff8046": 12,
+"Fast-Parent7370 11aef2fbc82d305c26540ae28adb085431f9595d": 13,
+"Fast-Parent7370 263b53e50241914a22f7ba6a139b52162c9d7927": 14,
+"Fast-Parent7370 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d": 15,
+"Fast-Parent7370 412dfcc0cec7641775a7c839bc0f9aa73abb4fcc": 16,
+"Fast-Parent7370 55b0de600d1770babe63d94ad3766a36bdedc443": 17,
+"Fast-Parent7370 59f966cf6839a0494e42ed1ab98616eea03dcb36": 18,
+"Fast-Parent7370 67129f034941b1d8ea3ed684822e04f517c6c837": 19,
+"Fast-Parent7370 67db7f7fb33b99da8cc5dc575714924b96d0f0fe": 20,
+"Fast-Parent7370 71734ad6654715e7dce4aae90c5cc8afaf2b2d53": 21,
+"Fast-Parent7370 cd89cebd8d3df077c0849da4b964527046e6e83b": 22,
+"Fast-Parent7370 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd": 23,
+"Fast-Parent7370 f1d5c27b73a0f5deefaac9ebefb021549c83da5f": 24,
+"Fast-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28": 25,
+"Fast-Slow 263b53e50241914a22f7ba6a139b52162c9d7927": 26,
+"Fast-Slow 32e5aea1681398335f1bcedb4fe1563906701634": 27,
+"Fast-Slow 67db7f7fb33b99da8cc5dc575714924b96d0f0fe": 28,
+"Fast-Slow 681e0cb368d6be5ea5f4c77a6aaa1bb9e4cef065": 29,
+"Fast-Slow 6de436c10169b2205bfa27d62ad007f51544c2e2": 30,
+"Fast-Slow a8ad00fc93f1f5d293ee48b63f39468febef6f75": 31,
+"Fast-Slow c1bcb73829afd84df619c446f95f08d9da5e56e9": 32,
+"Fast-Slow c26450af1d7b2381844d003867fd7f20a25ec8d0": 33,
+"Fast-Slow cd497408bb4dc6650d871b5076e738420ff431d7": 34,
+"Fast-Slow f1aab37322a229b611544205e7da8c17435561cf": 35,
+"Fast-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a": 36,
+"PR7375-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28": 37,
+"PR7375-Slow 4b013a7cdcc98a6d271920be4713278d8bd5ffc0": 38,
+"PR7375-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc": 39,
+"PR7375-Slow cba21fd0c1cedb67379cc8dbd73386cbf37eb940": 40,
+"PR7375-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6": 41,
+"PR7375-Slow f1aab37322a229b611544205e7da8c17435561cf": 42,
+"PR7375-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a": 43,
+"PR7406-Slow 08d0f73c2c2df7c21dd96d2c33c27373809683be": 44,
+"PR7406-Slow 3ac805bfd2228e6547322a64e428b916c2fcbfde": 45,
+"PR7406-Slow 8d26f4e2602f07c26d3c91753f7fa9ec840d4f8d": 46,
+"PR7406-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc": 47,
+"PR7406-Slow c9fb2834a412b295ee95d08a7fab723fd88202b5": 48,
+"PR7406-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6": 49 
+},
+"total": 49,
+"chunk_info": {
+ "geom17_ribbon_details_chunk_common.tsv": {
+ "bytes":      122,
+"rows": 3 
+},
+"geom17_ribbon_details_chunk1.tsv": {
+ "bytes":     7281,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk2.tsv": {
+ "bytes":     7229,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk3.tsv": {
+ "bytes":     7283,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk4.tsv": {
+ "bytes":     7346,
+"rows": 134 
+},
+"geom17_ribbon_details_chunk5.tsv": {
+ "bytes":     7289,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk6.tsv": {
+ "bytes":     7181,
+"rows": 131 
+},
+"geom17_ribbon_details_chunk7.tsv": {
+ "bytes":     7289,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk8.tsv": {
+ "bytes":     7294,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk9.tsv": {
+ "bytes":     7283,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk10.tsv": {
+ "bytes":     7225,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk11.tsv": {
+ "bytes":     7295,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk12.tsv": {
+ "bytes":     7296,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk13.tsv": {
+ "bytes":     7289,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk14.tsv": {
+ "bytes":     7293,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk15.tsv": {
+ "bytes":     7283,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk16.tsv": {
+ "bytes":     7227,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk17.tsv": {
+ "bytes":     7288,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk18.tsv": {
+ "bytes":     7180,
+"rows": 131 
+},
+"geom17_ribbon_details_chunk19.tsv": {
+ "bytes":     7291,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk20.tsv": {
+ "bytes":     7179,
+"rows": 131 
+},
+"geom17_ribbon_details_chunk21.tsv": {
+ "bytes":     7286,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk22.tsv": {
+ "bytes":     7284,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk23.tsv": {
+ "bytes":     7290,
+"rows": 133 
+},
+"geom17_ribbon_details_chunk24.tsv": {
+ "bytes":     7224,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk25.tsv": {
+ "bytes":     7123,
+"rows": 130 
+},
+"geom17_ribbon_details_chunk26.tsv": {
+ "bytes":     7182,
+"rows": 131 
+},
+"geom17_ribbon_details_chunk27.tsv": {
+ "bytes":     7228,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk28.tsv": {
+ "bytes":     6949,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk29.tsv": {
+ "bytes":     7116,
+"rows": 130 
+},
+"geom17_ribbon_details_chunk30.tsv": {
+ "bytes":     7130,
+"rows": 130 
+},
+"geom17_ribbon_details_chunk31.tsv": {
+ "bytes":     7131,
+"rows": 130 
+},
+"geom17_ribbon_details_chunk32.tsv": {
+ "bytes":     7179,
+"rows": 131 
+},
+"geom17_ribbon_details_chunk33.tsv": {
+ "bytes":     7128,
+"rows": 130 
+},
+"geom17_ribbon_details_chunk34.tsv": {
+ "bytes":     7234,
+"rows": 132 
+},
+"geom17_ribbon_details_chunk35.tsv": {
+ "bytes":     7073,
+"rows": 129 
+},
+"geom17_ribbon_details_chunk36.tsv": {
+ "bytes":     7060,
+"rows": 129 
+},
+"geom17_ribbon_details_chunk37.tsv": {
+ "bytes":     7080,
+"rows": 129 
+},
+"geom17_ribbon_details_chunk38.tsv": {
+ "bytes":     6960,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk39.tsv": {
+ "bytes":     6960,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk40.tsv": {
+ "bytes":     7016,
+"rows": 128 
+},
+"geom17_ribbon_details_chunk41.tsv": {
+ "bytes":     6963,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk42.tsv": {
+ "bytes":     6962,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk43.tsv": {
+ "bytes":     6959,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk44.tsv": {
+ "bytes":     6966,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk45.tsv": {
+ "bytes":     6962,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk46.tsv": {
+ "bytes":     6963,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk47.tsv": {
+ "bytes":     6959,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk48.tsv": {
+ "bytes":     6960,
+"rows": 127 
+},
+"geom17_ribbon_details_chunk49.tsv": {
+ "bytes":     6960,
+"rows": 127 
+} 
+} 
+},
+"geom18_line_details": {
+ "geom": "line",
+"classed": "geom18_line_details",
+"aes": {
+"x": "N",
+"y": "median",
+"key": "age",
+"colour": "age",
+"group": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "factor",
+"group": "character",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer"
+},
+"chunk_order": [
+ "Commit" 
+],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"columns": {
+ "common": [
+ "group",
+"colour",
+"key",
+"showSelected1" 
+] 
+},
+"chunks": {
+ "Fast-PR7383 22045e5ef8f46066619823d42ea83253f165ea7d": 1,
+"Fast-PR7383 263b53e50241914a22f7ba6a139b52162c9d7927": 2,
+"Fast-PR7383 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d": 3,
+"Fast-PR7383 4f84d3c72a08ecdd9965b3cb8e493cabfd80492b": 4,
+"Fast-PR7383 55b0de600d1770babe63d94ad3766a36bdedc443": 5,
+"Fast-PR7383 59f966cf6839a0494e42ed1ab98616eea03dcb36": 6,
+"Fast-PR7383 66cb6d2393cef30083b444346a7600a079207806": 7,
+"Fast-PR7383 67129f034941b1d8ea3ed684822e04f517c6c837": 8,
+"Fast-PR7383 833c1f4bcc6eb664320f80bf1abde4cc8177b20c": 9,
+"Fast-PR7383 c81f8bbdffebd4886ddf70b9ca0f61a1cfa8237b": 10,
+"Fast-PR7383 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd": 11,
+"Fast-PR7383 fb419f1a672ee5dbf4069c24a82c6168abff8046": 12,
+"Fast-Parent7370 11aef2fbc82d305c26540ae28adb085431f9595d": 13,
+"Fast-Parent7370 263b53e50241914a22f7ba6a139b52162c9d7927": 14,
+"Fast-Parent7370 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d": 15,
+"Fast-Parent7370 412dfcc0cec7641775a7c839bc0f9aa73abb4fcc": 16,
+"Fast-Parent7370 55b0de600d1770babe63d94ad3766a36bdedc443": 17,
+"Fast-Parent7370 59f966cf6839a0494e42ed1ab98616eea03dcb36": 18,
+"Fast-Parent7370 67129f034941b1d8ea3ed684822e04f517c6c837": 19,
+"Fast-Parent7370 67db7f7fb33b99da8cc5dc575714924b96d0f0fe": 20,
+"Fast-Parent7370 71734ad6654715e7dce4aae90c5cc8afaf2b2d53": 21,
+"Fast-Parent7370 cd89cebd8d3df077c0849da4b964527046e6e83b": 22,
+"Fast-Parent7370 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd": 23,
+"Fast-Parent7370 f1d5c27b73a0f5deefaac9ebefb021549c83da5f": 24,
+"Fast-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28": 25,
+"Fast-Slow 263b53e50241914a22f7ba6a139b52162c9d7927": 26,
+"Fast-Slow 32e5aea1681398335f1bcedb4fe1563906701634": 27,
+"Fast-Slow 67db7f7fb33b99da8cc5dc575714924b96d0f0fe": 28,
+"Fast-Slow 681e0cb368d6be5ea5f4c77a6aaa1bb9e4cef065": 29,
+"Fast-Slow 6de436c10169b2205bfa27d62ad007f51544c2e2": 30,
+"Fast-Slow a8ad00fc93f1f5d293ee48b63f39468febef6f75": 31,
+"Fast-Slow c1bcb73829afd84df619c446f95f08d9da5e56e9": 32,
+"Fast-Slow c26450af1d7b2381844d003867fd7f20a25ec8d0": 33,
+"Fast-Slow cd497408bb4dc6650d871b5076e738420ff431d7": 34,
+"Fast-Slow f1aab37322a229b611544205e7da8c17435561cf": 35,
+"Fast-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a": 36,
+"PR7375-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28": 37,
+"PR7375-Slow 4b013a7cdcc98a6d271920be4713278d8bd5ffc0": 38,
+"PR7375-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc": 39,
+"PR7375-Slow cba21fd0c1cedb67379cc8dbd73386cbf37eb940": 40,
+"PR7375-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6": 41,
+"PR7375-Slow f1aab37322a229b611544205e7da8c17435561cf": 42,
+"PR7375-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a": 43,
+"PR7406-Slow 08d0f73c2c2df7c21dd96d2c33c27373809683be": 44,
+"PR7406-Slow 3ac805bfd2228e6547322a64e428b916c2fcbfde": 45,
+"PR7406-Slow 8d26f4e2602f07c26d3c91753f7fa9ec840d4f8d": 46,
+"PR7406-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc": 47,
+"PR7406-Slow c9fb2834a412b295ee95d08a7fab723fd88202b5": 48,
+"PR7406-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6": 49 
+},
+"total": 49,
+"chunk_info": {
+ "geom18_line_details_chunk_common.tsv": {
+ "bytes":       93,
+"rows": 3 
+},
+"geom18_line_details_chunk1.tsv": {
+ "bytes":     4896,
+"rows": 133 
+},
+"geom18_line_details_chunk2.tsv": {
+ "bytes":     4864,
+"rows": 132 
+},
+"geom18_line_details_chunk3.tsv": {
+ "bytes":     4897,
+"rows": 133 
+},
+"geom18_line_details_chunk4.tsv": {
+ "bytes":     4934,
+"rows": 134 
+},
+"geom18_line_details_chunk5.tsv": {
+ "bytes":     4895,
+"rows": 133 
+},
+"geom18_line_details_chunk6.tsv": {
+ "bytes":     4825,
+"rows": 131 
+},
+"geom18_line_details_chunk7.tsv": {
+ "bytes":     4897,
+"rows": 133 
+},
+"geom18_line_details_chunk8.tsv": {
+ "bytes":     4891,
+"rows": 133 
+},
+"geom18_line_details_chunk9.tsv": {
+ "bytes":     4900,
+"rows": 133 
+},
+"geom18_line_details_chunk10.tsv": {
+ "bytes":     4854,
+"rows": 132 
+},
+"geom18_line_details_chunk11.tsv": {
+ "bytes":     4899,
+"rows": 133 
+},
+"geom18_line_details_chunk12.tsv": {
+ "bytes":     4893,
+"rows": 133 
+},
+"geom18_line_details_chunk13.tsv": {
+ "bytes":     4895,
+"rows": 133 
+},
+"geom18_line_details_chunk14.tsv": {
+ "bytes":     4903,
+"rows": 133 
+},
+"geom18_line_details_chunk15.tsv": {
+ "bytes":     4894,
+"rows": 133 
+},
+"geom18_line_details_chunk16.tsv": {
+ "bytes":     4863,
+"rows": 132 
+},
+"geom18_line_details_chunk17.tsv": {
+ "bytes":     4896,
+"rows": 133 
+},
+"geom18_line_details_chunk18.tsv": {
+ "bytes":     4812,
+"rows": 131 
+},
+"geom18_line_details_chunk19.tsv": {
+ "bytes":     4899,
+"rows": 133 
+},
+"geom18_line_details_chunk20.tsv": {
+ "bytes":     4818,
+"rows": 131 
+},
+"geom18_line_details_chunk21.tsv": {
+ "bytes":     4897,
+"rows": 133 
+},
+"geom18_line_details_chunk22.tsv": {
+ "bytes":     4899,
+"rows": 133 
+},
+"geom18_line_details_chunk23.tsv": {
+ "bytes":     4894,
+"rows": 133 
+},
+"geom18_line_details_chunk24.tsv": {
+ "bytes":     4858,
+"rows": 132 
+},
+"geom18_line_details_chunk25.tsv": {
+ "bytes":     4788,
+"rows": 130 
+},
+"geom18_line_details_chunk26.tsv": {
+ "bytes":     4822,
+"rows": 131 
+},
+"geom18_line_details_chunk27.tsv": {
+ "bytes":     4859,
+"rows": 132 
+},
+"geom18_line_details_chunk28.tsv": {
+ "bytes":     4680,
+"rows": 127 
+},
+"geom18_line_details_chunk29.tsv": {
+ "bytes":     4786,
+"rows": 130 
+},
+"geom18_line_details_chunk30.tsv": {
+ "bytes":     4780,
+"rows": 130 
+},
+"geom18_line_details_chunk31.tsv": {
+ "bytes":     4786,
+"rows": 130 
+},
+"geom18_line_details_chunk32.tsv": {
+ "bytes":     4815,
+"rows": 131 
+},
+"geom18_line_details_chunk33.tsv": {
+ "bytes":     4782,
+"rows": 130 
+},
+"geom18_line_details_chunk34.tsv": {
+ "bytes":     4857,
+"rows": 132 
+},
+"geom18_line_details_chunk35.tsv": {
+ "bytes":     4754,
+"rows": 129 
+},
+"geom18_line_details_chunk36.tsv": {
+ "bytes":     4747,
+"rows": 129 
+},
+"geom18_line_details_chunk37.tsv": {
+ "bytes":     4744,
+"rows": 129 
+},
+"geom18_line_details_chunk38.tsv": {
+ "bytes":     4674,
+"rows": 127 
+},
+"geom18_line_details_chunk39.tsv": {
+ "bytes":     4669,
+"rows": 127 
+},
+"geom18_line_details_chunk40.tsv": {
+ "bytes":     4708,
+"rows": 128 
+},
+"geom18_line_details_chunk41.tsv": {
+ "bytes":     4670,
+"rows": 127 
+},
+"geom18_line_details_chunk42.tsv": {
+ "bytes":     4674,
+"rows": 127 
+},
+"geom18_line_details_chunk43.tsv": {
+ "bytes":     4667,
+"rows": 127 
+},
+"geom18_line_details_chunk44.tsv": {
+ "bytes":     4674,
+"rows": 127 
+},
+"geom18_line_details_chunk45.tsv": {
+ "bytes":     4677,
+"rows": 127 
+},
+"geom18_line_details_chunk46.tsv": {
+ "bytes":     4669,
+"rows": 127 
+},
+"geom18_line_details_chunk47.tsv": {
+ "bytes":     4666,
+"rows": 127 
+},
+"geom18_line_details_chunk48.tsv": {
+ "bytes":     4683,
+"rows": 127 
+},
+"geom18_line_details_chunk49.tsv": {
+ "bytes":     4676,
+"rows": 127 
+} 
+} 
+},
+"geom19_point_details": {
+ "geom": "point",
+"classed": "geom19_point_details",
+"aes": {
+"x": "N",
+"y": "unit.value",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "#FFFFFF",
+"size":        3,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom19_point_details_chunk1.tsv": {
+ "bytes":    13567,
+"rows": 147 
+} 
+} 
+},
+"geom20_labelaligned_details": {
+ "geom": "label_aligned",
+"classed": "geom20_labelaligned_details",
+"aes": {
+"x": "N",
+"y": "unit.value",
+"label": "age",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "label_r":     0.15,
+"alignment": "horizontal",
+"min_distance":      0.1,
+"background_rect": true,
+"na.rm": false,
+"na.rm": false,
+"vjust":     -0.1,
+"alpha":      0.5,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"label": "factor",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom20_labelaligned_details_chunk1.tsv": {
+ "bytes":    14357,
+"rows": 147 
+} 
+} 
+},
+"geom21_text_details": {
+ "geom": "text",
+"classed": "geom21_text_details",
+"aes": {
+"x": "0",
+"y": "0",
+"label": "substring(commit, 1, 8)",
+"href": "paste0(\"https://github.com/Rdatatable/data.table/commit/\", commit)",
+"key": "1",
+"showSelected1": "Commit"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"vjust":        0,
+"showSelected": "Commit",
+"help_showSelected": "Commit",
+"anchor": "start" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"label": "linetype",
+"href": "character",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom21_text_details_chunk1.tsv": {
+ "bytes":     9367,
+"rows": 49 
+} 
+} 
+},
+"geom22_tallrect_zoom": {
+ "geom": "tallrect",
+"classed": "geom22_tallrect_zoom",
+"aes": {
+"xmin": "rank_rel - 0.5",
+"xmax": "rank_rel + 0.5",
+"key": "rank_rel",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom22_tallrect_zoom_chunk1.tsv": {
+ "bytes":     1209,
+"rows": 49 
+} 
+} 
+},
+"geom23_line_zoom": {
+ "geom": "line",
+"classed": "geom23_line_zoom",
+"aes": {
+"x": "rank_rel",
+"y": "value_norm",
+"colour": "age",
+"key": "1",
+"showSelected1": "Bisect",
+"showSelected2": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        2,
+"showSelected": [ "Bisect", "age" ],
+"help_showSelected": [ "Bisect", "age" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom23_line_zoom_chunk1.tsv": {
+ "bytes":     4994,
+"rows": 98 
+} 
+} 
+},
+"geom24_point_zoom": {
+ "geom": "point",
+"classed": "geom24_point_zoom",
+"aes": {
+"x": "rank_rel",
+"y": "value_norm",
+"key": "paste(rank, age)",
+"fill": "Status",
+"colour": "age",
+"showSelected1": "Bisect",
+"showSelected2": "Status",
+"showSelected3": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": [ "Bisect", "Status", "age" ],
+"help_showSelected": [ "Bisect", "Status", "age" ] 
+},
+"types": {
+"colour": "rgb",
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "character",
+"showSelected1": "character",
+"showSelected2": "factor",
+"showSelected3": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom24_point_zoom_chunk1.tsv": {
+ "bytes":     9390,
+"rows": 147 
+} 
+} 
+},
+"geom25_tallrect_zoom": {
+ "geom": "tallrect",
+"classed": "geom25_tallrect_zoom",
+"aes": {
+"xmin": "rank_rel - 0.5",
+"xmax": "rank_rel + 0.5",
+"key": "rank_rel",
+"clickSelects": "Commit",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"colour": "#000000",
+"fill": "transparent",
+"clickSelects": "Commit",
+"showSelected": "Bisect",
+"colour_off": "transparent",
+"help_clickSelects": "Commit",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1,
+"chunk_info": {
+ "geom25_tallrect_zoom_chunk1.tsv": {
+ "bytes":     3843,
+"rows": 49 
+} 
+} 
+} 
+},
+"duration": {
+ "Commit":     1000,
+"age":     1000,
+"Bisect":     1000 
+},
+"selectors": {
+ "Status": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "change", "0", "1" ],
+"levels": [ "change", "0", "1" ],
+"update": [
+ "geom4_vline_bisects",
+"geom11_point_bisects",
+"geom13_point_bisects",
+"geom24_point_zoom" 
+] 
+},
+"age": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "old", "new", "between" ],
+"levels": [ "old", "new", "between" ],
+"update": [
+ "geom6_segment_bisects",
+"geom9_point_bisects",
+"geom12_line_bisects",
+"geom13_point_bisects",
+"geom17_ribbon_details",
+"geom18_line_details",
+"geom19_point_details",
+"geom20_labelaligned_details",
+"geom23_line_zoom",
+"geom24_point_zoom" 
+],
+"duration":     1000 
+},
+"Bisect": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "Fast-PR7383",
+"levels": [ "Fast-PR7383", "Fast-Parent7370", "Fast-Slow", "PR7375-Slow", "PR7406-Slow" ],
+"update": [
+ "geom1_rect_bisects",
+"geom2_tallrect_bisects",
+"geom4_vline_bisects",
+"geom6_segment_bisects",
+"geom7_segment_bisects",
+"geom8_text_bisects",
+"geom9_point_bisects",
+"geom10_segment_bisects",
+"geom11_point_bisects",
+"geom13_point_bisects",
+"geom14_tallrect_bisects",
+"geom22_tallrect_zoom",
+"geom23_line_zoom",
+"geom24_point_zoom",
+"geom25_tallrect_zoom" 
+],
+"duration":     1000 
+},
+"Commit": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": "Commit",
+"selected": "Fast-Parent7370 11aef2fbc82d305c26540ae28adb085431f9595d",
+"levels": [ "Fast-Parent7370 11aef2fbc82d305c26540ae28adb085431f9595d", "Fast-Parent7370 263b53e50241914a22f7ba6a139b52162c9d7927", "Fast-Parent7370 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d", "Fast-Parent7370 412dfcc0cec7641775a7c839bc0f9aa73abb4fcc", "Fast-Parent7370 55b0de600d1770babe63d94ad3766a36bdedc443", "Fast-Parent7370 59f966cf6839a0494e42ed1ab98616eea03dcb36", "Fast-Parent7370 67129f034941b1d8ea3ed684822e04f517c6c837", "Fast-Parent7370 67db7f7fb33b99da8cc5dc575714924b96d0f0fe", "Fast-Parent7370 71734ad6654715e7dce4aae90c5cc8afaf2b2d53", "Fast-Parent7370 cd89cebd8d3df077c0849da4b964527046e6e83b", "Fast-Parent7370 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd", "Fast-Parent7370 f1d5c27b73a0f5deefaac9ebefb021549c83da5f", "Fast-PR7383 22045e5ef8f46066619823d42ea83253f165ea7d", "Fast-PR7383 263b53e50241914a22f7ba6a139b52162c9d7927", "Fast-PR7383 3ad93f77a6f0b0e82cbf2b639f5d749dd06a122d", "Fast-PR7383 4f84d3c72a08ecdd9965b3cb8e493cabfd80492b", "Fast-PR7383 55b0de600d1770babe63d94ad3766a36bdedc443", "Fast-PR7383 59f966cf6839a0494e42ed1ab98616eea03dcb36", "Fast-PR7383 66cb6d2393cef30083b444346a7600a079207806", "Fast-PR7383 67129f034941b1d8ea3ed684822e04f517c6c837", "Fast-PR7383 833c1f4bcc6eb664320f80bf1abde4cc8177b20c", "Fast-PR7383 c81f8bbdffebd4886ddf70b9ca0f61a1cfa8237b", "Fast-PR7383 cf898ab6f8b15efc5b91ffa636579ee7c92b01bd", "Fast-PR7383 fb419f1a672ee5dbf4069c24a82c6168abff8046", "Fast-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28", "Fast-Slow 263b53e50241914a22f7ba6a139b52162c9d7927", "Fast-Slow 32e5aea1681398335f1bcedb4fe1563906701634", "Fast-Slow 67db7f7fb33b99da8cc5dc575714924b96d0f0fe", "Fast-Slow 681e0cb368d6be5ea5f4c77a6aaa1bb9e4cef065", "Fast-Slow 6de436c10169b2205bfa27d62ad007f51544c2e2", "Fast-Slow a8ad00fc93f1f5d293ee48b63f39468febef6f75", "Fast-Slow c1bcb73829afd84df619c446f95f08d9da5e56e9", "Fast-Slow c26450af1d7b2381844d003867fd7f20a25ec8d0", "Fast-Slow cd497408bb4dc6650d871b5076e738420ff431d7", "Fast-Slow f1aab37322a229b611544205e7da8c17435561cf", "Fast-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a", "PR7375-Slow 1685a3b47d48f323afeae589545f7cbb7717ec28", "PR7375-Slow 4b013a7cdcc98a6d271920be4713278d8bd5ffc0", "PR7375-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc", "PR7375-Slow cba21fd0c1cedb67379cc8dbd73386cbf37eb940", "PR7375-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6", "PR7375-Slow f1aab37322a229b611544205e7da8c17435561cf", "PR7375-Slow f6bbd5b3073526e554ad07bc9b0a346d72ad4e3a", "PR7406-Slow 08d0f73c2c2df7c21dd96d2c33c27373809683be", "PR7406-Slow 3ac805bfd2228e6547322a64e428b916c2fcbfde", "PR7406-Slow 8d26f4e2602f07c26d3c91753f7fa9ec840d4f8d", "PR7406-Slow 95d9c82d5f97de452a8b3fc0f3b2a16836eda8cc", "PR7406-Slow c9fb2834a412b295ee95d08a7fab723fd88202b5", "PR7406-Slow df7fa8071c6b818d24e47cc1a84a6dc0491550d6" ],
+"update": [
+ "geom14_tallrect_bisects",
+"geom17_ribbon_details",
+"geom18_line_details",
+"geom19_point_details",
+"geom20_labelaligned_details",
+"geom21_text_details",
+"geom25_tallrect_zoom" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "bisects": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "right": [
+ "Bisect",
+"log10_N" 
+],
+"top": [
+ "",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2" ],
+"ROW": [ 1, 2 ],
+"COL": [ 1, 1 ],
+"panel": [ "Bisect", "log10_N" ],
+"SCALE_X": [ 1, 1 ],
+"SCALE_Y": [ 1, 2 ],
+"AXIS_Y": [ true, true ],
+"AXIS_X": [ false, true ],
+"coord_fixed": [ false, false ],
+"width_proportion": [        1,        1 ],
+"height_proportion": [      0.5,      0.5 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+      10,
+      20,
+      30 
+],
+[
+        0,
+      10,
+      20,
+      30 
+] 
+],
+"y": [
+ [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+[
+     3.45,
+     3.5,
+    3.55,
+     3.6,
+    3.65,
+     3.7 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35 
+],
+[
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35 
+] 
+],
+"y": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5 
+],
+[
+     3.45,
+   3.475,
+     3.5,
+   3.525,
+    3.55,
+   3.575,
+     3.6,
+   3.625,
+    3.65,
+   3.675,
+     3.7,
+   3.725 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+      10,
+      20,
+      30 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30" 
+],
+"xrange": [   -1.375,   39.875 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+"ylab": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5" 
+],
+"yrange": [    -0.25,     5.25 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        0,
+      10,
+      20,
+      30 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30" 
+],
+"xrange": [   -1.375,   39.875 ],
+"xline": false,
+"xticks": true,
+"y": [
+     3.45,
+     3.5,
+    3.55,
+     3.6,
+    3.65,
+     3.7 
+],
+"ylab": [
+ "3.45",
+"3.50",
+"3.55",
+"3.60",
+"3.65",
+"3.70" 
+],
+"yrange": [ 3.440388, 3.738837 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Commit rank over time",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"10",
+"20",
+"30" 
+],
+"ylabs": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"3.45",
+"3.50",
+"3.55",
+"3.60",
+"3.65",
+"3.70" 
+],
+"title": "Overview of all commits tested, select bisect",
+"title_size": "14.4pt",
+"options": {
+ "width":      600,
+"height":      700 
+},
+"span": {
+ "rowspan":        2,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_rect_bisects",
+"geom2_tallrect_bisects",
+"geom3_vline_bisects",
+"geom4_vline_bisects",
+"geom5_labelaligned_bisects",
+"geom6_segment_bisects",
+"geom7_segment_bisects",
+"geom8_text_bisects",
+"geom9_point_bisects",
+"geom10_segment_bisects",
+"geom11_point_bisects",
+"geom12_line_bisects",
+"geom13_point_bisects",
+"geom14_tallrect_bisects" 
+] 
+},
+"details": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       1,
+       2,
+       3 
+] 
+],
+"y": [
+ [
+       -3,
+      -2,
+      -1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5 
+] 
+],
+"y": [
+ [
+     -3.5,
+      -3,
+    -2.5,
+      -2,
+    -1.5,
+      -1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       1,
+       2,
+       3 
+],
+"xlab": [
+ "1",
+"10",
+"100",
+"1000" 
+],
+"xrange": [ -0.1881414,  3.95097 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -3,
+      -2,
+      -1 
+],
+"ylab": [
+ "0.001",
+"0.010",
+"0.100" 
+],
+"yrange": [  -3.9509, -0.5469811 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "N = data size",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Computation time (seconds)",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1",
+"10",
+"100",
+"1000" 
+],
+"ylabs": [
+ "0.001",
+"0.010",
+"0.100" 
+],
+"title": "Asymptotic timing results for selected commit",
+"title_size": "14.4pt",
+"options": {
+ "width":      600,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom15_hline_details",
+"geom16_text_details",
+"geom17_ribbon_details",
+"geom18_line_details",
+"geom19_point_details",
+"geom20_labelaligned_details",
+"geom21_text_details" 
+] 
+},
+"zoom": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "Status": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Status",
+"class": "Status",
+"selector": "Status",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pointfill": "#000000",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "0" 
+},
+{
+ "pointfill": "#7F7F7F",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "change" 
+},
+{
+ "pointfill": "#FFFFFF",
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "1" 
+} 
+] 
+},
+"age": {
+ "guide": "legend",
+"geoms": [ "path", "point" ],
+"title": "age",
+"class": "age",
+"selector": "age",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pathcolour": "#EE82EE",
+"pathsize":        2,
+"pathlinetype":        1,
+"label": "old",
+"pointcolour": "#EE82EE",
+"pointshape":       21,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pathcolour": "#0000FF",
+"pathsize":        2,
+"pathlinetype":        1,
+"label": "between",
+"pointcolour": "#0000FF",
+"pointshape":       21,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pathcolour": "#FF0000",
+"pathsize":        2,
+"pathlinetype":        1,
+"label": "new",
+"pointcolour": "#FF0000",
+"pointshape":       21,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "log10_N" 
+],
+"top": [
+ "" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1" ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"variable": [ "log10_N" ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_Y": [ true ],
+"AXIS_X": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+      10,
+      20,
+      30 
+] 
+],
+"y": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35 
+] 
+],
+"y": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+      10,
+      20,
+      30 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30" 
+],
+"xrange": [     -2.3,     37.3 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [    -0.05,     1.05 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Commit rank relative to bisect",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"10",
+"20",
+"30" 
+],
+"ylabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"title": "Zoom to bisect, relative values",
+"title_size": "14.4pt",
+"options": {
+ "width":      550,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom22_tallrect_zoom",
+"geom23_line_zoom",
+"geom24_point_zoom",
+"geom25_tallrect_zoom" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/data.table-pr7912-bisect-viz/blob/main/viz.R",
+"title": "data.table git bisect performance analysis for PR7912, 0.01 sec time limit, N on log10 scale" 
+}

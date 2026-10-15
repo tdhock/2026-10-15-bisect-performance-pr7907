@@ -1,0 +1,11 @@
+colour	y	x	key	clickSelects	showSelected1	PANEL	fill
+#EE82EE	1	2	Fast-PR7383 old	Fast-PR7383	old	1	#EE82EE
+#EE82EE	2	2	Fast-Parent7370 old	Fast-Parent7370	old	1	#EE82EE
+#EE82EE	3	2	Fast-Slow old	Fast-Slow	old	1	#EE82EE
+#EE82EE	4	21	PR7375-Slow old	PR7375-Slow	old	1	#EE82EE
+#EE82EE	5	28	PR7406-Slow old	PR7406-Slow	old	1	#EE82EE
+#FF0000	1	22	Fast-PR7383 new	Fast-PR7383	new	1	#FF0000
+#FF0000	2	28	Fast-Parent7370 new	Fast-Parent7370	new	1	#FF0000
+#FF0000	3	38	Fast-Slow new	Fast-Slow	new	1	#FF0000
+#FF0000	4	38	PR7375-Slow new	PR7375-Slow	new	1	#FF0000
+#FF0000	5	38	PR7406-Slow new	PR7406-Slow	new	1	#FF0000
