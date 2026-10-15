@@ -2427,6 +2427,6 @@
 ] 
 } 
 },
-"source": "https://github.com/tdhock/data.table-pr7912-bisect-viz/blob/main/viz.R",
-"title": "data.table git bisect performance analysis for PR7912, 0.01 sec time limit, N on log10 scale" 
+"source": "https://github.com/tdhock/data.table-pr7907-bisect-viz/blob/main/viz.R",
+"title": "data.table git bisect performance analysis for PR7907" 
 }
